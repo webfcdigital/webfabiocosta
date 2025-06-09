@@ -1,0 +1,80 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do cartão principal */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+/* Estilo da foto de perfil */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 3px solid #007bff;
+    object-fit: cover;
+}
+
+/* Estilo do nome principal (H1) */
+.card h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo do parágrafo de descrição */
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Container para os links sociais - ATUALIZADO */
+.social-links {
+    display: flex; /* Alinha os botões lado a lado */
+    justify-content: center; /* Centraliza os botões no container */
+    gap: 15px; /* Adiciona um espaço de 15px entre os botões */
+}
+
+/* Estilo geral dos botões sociais */
+.social-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo específico para o botão do GitHub */
+.social-btn.github {
+    background-color: #333;
+}
+
+/* NOVO ESTILO PARA O BOTÃO DO LINKEDIN */
+.social-btn.linkedin {
+    background-color: #0A66C2; /* Cor oficial do LinkedIn */
+}
