@@ -72,39 +72,162 @@
             </div>
         </section>
 
-        <section class="page-section bg-light" id="experience">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Experiência Profissional</h2>
-                <hr class="divider" />
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Tech Lead</h3>
-                            <h4 class="company">InnvoLabs</h4>
-                            <span class="date">Janeiro/2024 - Maio/2024</span>
-                            <p>Gerenciei a equipe de desenvolvimento responsável pela criação do Portal de Renegociação online e Portal Central Correspondente Bancário, utilizando .NET Core, ReactJS, e APIs de integração com sistemas bancários.</p>
+      <section class="page-section bg-light" id="experience">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Experiência Profissional</h2>
+        <hr class="divider" />
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="experience-card">
+                        <h3>Senior Fullstack Developer</h3>
+                        <h4 class="company">Linx</h4>
+                        <span class="date">fev. de 2023 - jan. de 2024 (1 ano)</span>
+                        <p>Trabalhei no desenvolvimento de ferramentas de suporte à operação em ambiente Azure DevOps para uma das maiores empresas de software da América Latina.</p>
+                        <div class="tech-list">
+                            <span class="tech-badge-exp">.Net Core 3</span>
+                            <span class="tech-badge-exp">Azure ServiceBus</span>
+                            <span class="tech-badge-exp">Azure Functions</span>
+                            <span class="tech-badge-exp">API Management</span>
+                            <span class="tech-badge-exp">Minimal Apis</span>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor .NET</h3>
-                            <h4 class="company">K2 Partnering Solutions - Cliente: Linx</h4>
-                            <span class="date">Fevereiro/2023 - Janeiro/2024</span>
-                            <p>Participei ativamente no desenvolvimento de microserviços com .NET Core e integrações complexas via Azure DevOps, otimizando as operações de serviços financeiros da Linx.</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Senior Fullstack Developer</h3>
+                        <h4 class="company">Valtech</h4>
+                        <span class="date">nov. de 2021 - abr. de 2023 (1 ano 6 meses)</span>
+                        <p>Como desenvolvedor fullstack, fiz parte de uma equipe global atendendo a diversos projetos, com foco em tecnologias serverless e cloud.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">NodeJs 14</span>
+                            <span class="tech-badge-exp">AWS Lambda</span>
+                            <span class="tech-badge-exp">AWS SAM</span>
+                            <span class="tech-badge-exp">AWS API Gateway</span>
+                            <span class="tech-badge-exp">Elastic Search</span>
+                            <span class="tech-badge-exp">Sitecore Content Hub</span>
                         </div>
                     </div>
-                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Desenvolvedor Fullstack</h3>
-                            <h4 class="company">MercadoCar</h4>
-                            <span class="date">Agosto/2022 - Novembro/2022</span>
-                            <p>Desenvolvimento do sistema de gerenciamento de entregas, integrando VueJS no front-end com .NET Core no back-end, além da utilização de RabbitMQ para mensageria.</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Senior Fullstack Developer</h3>
+                        <h4 class="company">Mercadocar</h4>
+                        <span class="date">ago. de 2022 - dez. de 2022 (5 meses)</span>
+                        <p>Participei da equipe de desenvolvimento do produto *Delivery MCar*, responsável por gerenciar as entregas para todas as filiais da empresa.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">.Net Core 3</span>
+                            <span class="tech-badge-exp">PostgreSql</span>
+                            <span class="tech-badge-exp">VueJs</span>
+                            <span class="tech-badge-exp">NodeJS</span>
+                            <span class="tech-badge-exp">RabbitMq</span>
+                            <span class="tech-badge-exp">Docker</span>
+                            <span class="tech-badge-exp">Azure DevOps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Senior Fullstack Developer</h3>
+                        <h4 class="company">Adiq Pagamentos</h4>
+                        <span class="date">out. de 2020 - jun. de 2022 (1 ano 9 meses)</span>
+                        <p>Fiz parte da equipe de desenvolvimento do produto Adiq Wallet, implementando funcionalidades de integrações de pagamento e PIX.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">.Net Core 2.2</span>
+                            <span class="tech-badge-exp">SOLID</span>
+                            <span class="tech-badge-exp">Hangfire</span>
+                            <span class="tech-badge-exp">SQL Server</span>
+                            <span class="tech-badge-exp">MongoDB</span>
+                            <span class="tech-badge-exp">AngularJs9</span>
+                            <span class="tech-badge-exp">NodeJS</span>
+                            <span class="tech-badge-exp">Openshift</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>NodeJS Developer</h3>
+                        <h4 class="company">National Basketball Association (NBA)</h4>
+                        <span class="date">abr. de 2021 - jun. de 2021 (3 meses)</span>
+                        <p>Em parceria com a VrGlass, participei do projeto NBA House Digital, um ambiente virtual para fãs da liga interagirem com parceiros da marca.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">NodeJs 14</span>
+                            <span class="tech-badge-exp">Colyseus</span>
+                            <span class="tech-badge-exp">AWS API Gateway</span>
+                            <span class="tech-badge-exp">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Senior Backend Developer</h3>
+                        <h4 class="company">Ideas Fractal Brasil</h4>
+                        <span class="date">mar. de 2019 - out. de 2020 (1 ano 8 meses)</span>
+                        <p>Atuei como desenvolvedor back-end na criação de ferramentas para o mercado de turismo nacional e internacional.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">.Net Core 2.2</span>
+                            <span class="tech-badge-exp">SOLID</span>
+                            <span class="tech-badge-exp">Hangfire</span>
+                            <span class="tech-badge-exp">SQL Server</span>
+                            <span class="tech-badge-exp">MongoDB</span>
+                            <span class="tech-badge-exp">AngularJs 7</span>
+                            <span class="tech-badge-exp">Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Fullstack Developer</h3>
+                        <h4 class="company">The Group Comunicação</h4>
+                        <span class="date">jun. de 2016 - abr. de 2018 (1 ano 11 meses)</span>
+                        <p>Como desenvolvedor Fullstack, atuei em diversos projetos com tecnologias .NET e Javascript, como o Portal do Reparador Volkswagen e Samsung Concierge.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">.NET</span>
+                            <span class="tech-badge-exp">Javascript</span>
+                            <span class="tech-badge-exp">GIT</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="carousel-item">
+                    <div class="experience-card">
+                        <h3>Project Manager & Dev Lead</h3>
+                        <h4 class="company">Grupo Rai</h4>
+                        <span class="date">abr. de 2008 - set. de 2013 (5 anos 6 meses)</span>
+                        <p>Liderança de equipes com SCRUM, supervisão de desenvolvimento e desenvolvimento fullstack com ASP, PHP e Flash.</p>
+                         <div class="tech-list">
+                            <span class="tech-badge-exp">SCRUM</span>
+                            <span class="tech-badge-exp">PHP</span>
+                            <span class="tech-badge-exp">.NET</span>
+                            <span class="tech-badge-exp">ASP</span>
+                            <span class="tech-badge-exp">HTML 5</span>
+                            <span class="tech-badge-exp">JQuery</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
         <section class="page-section" id="education">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Formação Acadêmica</h2>

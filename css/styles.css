@@ -11026,3 +11026,77 @@ header.masthead h1, header.masthead .h1 {
 footer.bg-dark {
     background-color: #212529 !important;
 }
+/* --- ESTILOS PARA O CARROSSEL DE EXPERIÊNCIA --- */
+
+#experience .carousel {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.experience-card {
+  padding: 30px 60px; /* Mais padding horizontal para dar espaço para as setas */
+  min-height: 400px; /* Altura mínima para evitar que o carrossel redimensione bruscamente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4623a; /* Cor primária do tema */
+  margin-bottom: 0.25rem;
+}
+
+.experience-card .company {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card .date {
+  display: block;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #212529;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto; /* Centraliza o parágrafo */
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tech-badge-exp {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Estilizando os controles do carrossel para combinar com o tema */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #f4623a; /* Cor primária */
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 50% 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #f4623a !important; /* Cor primária */
+}
