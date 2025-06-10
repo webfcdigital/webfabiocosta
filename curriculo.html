@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Fábio Pereira da Costa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* ESTILOS GERAIS E PARA IMPRESSÃO */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        :root {
+            --primary-color: #0d47a1; /* Um azul escuro e profissional */
+            --secondary-color: #212529; /* Cinza escuro para texto */
+            --subtle-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff;
+            color: var(--secondary-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 8.5in; /* Largura de uma página padrão */
+            min-height: 11in; /* Altura de uma página padrão */
+            margin: 20px auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* --- HEADER --- */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--subtle-gray);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        .header .job-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            font-size: 0.95rem;
+        }
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        .contact-info i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+
+        /* --- SECTIONS --- */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* --- EXPERIENCE --- */
+        .job {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid var(--subtle-gray);
+        }
+        .job:last-child {
+            margin-bottom: 0;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        .job-dates {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        .job-company {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+
+        /* --- SKILLS --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .skill-category h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-category li {
+            background-color: var(--subtle-gray);
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* --- EDUCATION --- */
+        .education-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        /* --- PRINT STYLES --- */
+        @media print {
+            body {
+                background-color: #fff;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 1cm;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Fábio Pereira da Costa</h1>
+            <p class="job-title">Fullstack Developer & Tech Lead</p>
+            <div class="contact-info">
+                <span><a href="mailto:webfcosta@gmail.com"><i class="fas fa-envelope"></i>webfcosta@gmail.com</a></span>
+                <span><a href="https://linkedin.com/in/webfabiocosta" target="_blank"><i class="fab fa-linkedin"></i>linkedin.com/in/webfabiocosta</a></span>
+                <span><a href="https://github.com/webfabiocosta" target="_blank"><i class="fab fa-github"></i>github.com/webfabiocosta</a></span>
+            </div>
+        </header>
+
+        <section class="section summary">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Experienced Fullstack Developer passionate about transforming people's routines through technology. With a journey that began in 2003, I have contributed significantly to the software development market, including outstanding experiences at renowned agencies and a focused expertise since 2019 in developing applications for digital payments. I stand out for leading award-winning projects for large clients and serving as a technical reference for development and management teams, with a proven ability to articulate, develop, and manage complex projects.
+            </p>
+        </section>
+
+        <section class="section experience">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">Software Architect</h3>
+                    <span class="job-dates">Oct 2024 - Jun 2025</span>
+                </div>
+                <h4 class="job-company">Mouts Info (Client: AB-Inbev)</h4>
+                <p>Led the technical and architectural definition of complex, mission-critical web applications, guiding teams in developing scalable, high-performance solutions focused on optimizing large data volumes.</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">Software Architect / Tech Lead</h3>
+                    <span class="job-dates">Feb 2024 - Oct 2024</span>
+                </div>
+                <h4 class="job-company">Innvo Labs (Client: Parana Banco)</h4>
+                <p>Designed a multi-layered ASP.NET MVC application for managing proposals and contracts, featuring Dapper, ClosedXML for reports, and SOAP integrations. Led the team and defined development patterns.</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">Senior Fullstack Developer</h3>
+                    <span class="job-dates">Feb 2023 - Jan 2024</span>
+                </div>
+                <h4 class="job-company">Linx</h4>
+                <p>Developed support tools for operations in an Azure DevOps environment for one of the largest software companies in Latin America.</p>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Back-End Development</h4>
+                    <ul><li>C#, .NET / .NET Core</li><li>Node.js</li><li>PHP</li><li>Microservices, API Development</li></ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Front-End Development</h4>
+                    <ul><li>JavaScript</li><li>Angular / AngularJS, VueJS</li><li>HTML, CSS, SASS</li><li>Bootstrap, jQuery</li></ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                    <ul><li>Amazon Web Services (AWS)</li><li>Azure DevOps & Functions</li><li>Docker</li><li>Automated Testing</li></ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases</h4>
+                    <ul><li>Microsoft SQL Server</li><li>MongoDB</li><li>Elasticsearch</li><li>NoSQL</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h4>Internet Environment Management</h4>
+                <p>Nove de Julho University (UNINOVE) | 2003 - 2005</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
