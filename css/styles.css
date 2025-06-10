@@ -11146,3 +11146,69 @@ footer.bg-dark {
 .masthead img.rounded-circle {
     border: 5px solid rgba(255, 255, 255, 0.3);
 }
+/* --- ESTILOS PARA AS MELHORIAS DINÂMICAS --- */
+
+/* Estilos para os Botões de Filtro de Habilidades */
+.filter-btn {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    margin: 0 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+    background-color: #ced4da;
+}
+
+.filter-btn.active {
+    background-color: var(--bs-primary);
+    color: #fff;
+    border-color: var(--bs-primary);
+}
+
+/* Animação para o filtro de habilidades */
+.skill-column {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-column.hide {
+    transform: scale(0.9);
+    opacity: 0;
+    display: none;
+}
+
+
+/* Estilo para o Botão "Voltar ao Topo" */
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bs-primary);
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+    z-index: 1050;
+}
+
+#back-to-top-btn:hover {
+    background-color: #d9532a; /* Cor primária um pouco mais escura */
+}
+
+#back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Correção para evitar barra de rolagem horizontal com AOS */
+body {
+    overflow-x: hidden;
+}
