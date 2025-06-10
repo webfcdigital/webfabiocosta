@@ -78,3 +78,20 @@ body {
 .social-btn.linkedin {
     background-color: #0A66C2; /* Cor oficial do LinkedIn */
 }
+/* --- AJUSTE DE COR DO MENU DE NAVEGAÇÃO AO ROLAR A PÁGINA --- */
+
+/* Cor do texto dos links (About, Skills, etc.) quando a página é rolada */
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+  color: #212529; /* Um cinza bem escuro, quase preto */
+}
+
+/* Cor do texto do seu nome (no canto esquerdo) quando a página é rolada */
+#mainNav.navbar-scrolled .navbar-brand {
+    color: #212529;
+}
+
+/* Cor dos links e do nome ao passar o mouse (hover) no estado de rolagem */
+#mainNav.navbar-scrolled .nav-link:hover,
+#mainNav.navbar-scrolled .navbar-brand:hover {
+    color: var(--bs-primary); /* A cor laranja principal do tema */
+}
