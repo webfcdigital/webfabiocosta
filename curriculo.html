@@ -1,170 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Fábio Pereira da Costa</title>
+    <title>Resume - Fábio Pereira da Costa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
-        /* ESTILOS GERAIS E PARA IMPRESSÃO */
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-        :root {
-            --primary-color: #0d47a1; /* Um azul escuro e profissional */
-            --secondary-color: #212529; /* Cinza escuro para texto */
-            --subtle-gray: #f4f4f4;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #fff;
-            color: var(--secondary-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 8.5in; /* Largura de uma página padrão */
-            min-height: 11in; /* Altura de uma página padrão */
-            margin: 20px auto;
-            padding: 40px;
-            background-color: white;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-
-        /* --- HEADER --- */
-        .header {
-            text-align: center;
-            border-bottom: 2px solid var(--subtle-gray);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin: 0;
-        }
-        .header .job-title {
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin-top: 5px;
-        }
-        .contact-info {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.95rem;
-        }
-        .contact-info a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .contact-info a:hover {
-            color: var(--primary-color);
-        }
-        .contact-info i {
-            margin-right: 8px;
-            color: var(--primary-color);
-        }
-
-        /* --- SECTIONS --- */
-        .section {
-            margin-bottom: 30px;
-        }
-        .section-title {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        /* --- EXPERIENCE --- */
-        .job {
-            margin-bottom: 25px;
-            padding-left: 20px;
-            border-left: 3px solid var(--subtle-gray);
-        }
-        .job:last-child {
-            margin-bottom: 0;
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-        }
-        .job-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin: 0;
-        }
-        .job-dates {
-            font-style: italic;
-            color: #555;
-            font-size: 0.9rem;
-        }
-        .job-company {
-            font-size: 1rem;
-            font-weight: 500;
-            margin: 5px 0;
-        }
-
-        /* --- SKILLS --- */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .skill-category h4 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .skill-category ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .skill-category li {
-            background-color: var(--subtle-gray);
-            border-radius: 5px;
-            padding: 5px 10px;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-        }
-
-        /* --- EDUCATION --- */
-        .education-item h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin: 0 0 5px 0;
-        }
-
-        /* --- PRINT STYLES --- */
-        @media print {
-            body {
-                background-color: #fff;
-            }
-            .container {
-                box-shadow: none;
-                margin: 0;
-                padding: 1cm;
-                max-width: 100%;
-            }
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-        }
+        :root { --primary-color: #0d47a1; --secondary-color: #212529; --subtle-gray: #f4f4f4; }
+        body { font-family: 'Roboto', sans-serif; color: var(--secondary-color); line-height: 1.6; }
+        .container { max-width: 8.5in; margin: 20px auto; padding: 40px; }
+        .header { text-align: center; border-bottom: 2px solid var(--subtle-gray); padding-bottom: 20px; margin-bottom: 20px; }
+        .header h1 { font-size: 2.2rem; color: var(--primary-color); margin: 0; }
+        .header .job-title { font-size: 1.2rem; font-weight: 500; margin-top: 5px; }
+        .contact-info { margin-top: 15px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px 25px; font-size: 0.9rem; }
+        .contact-info a { color: var(--secondary-color); text-decoration: none; }
+        .contact-info i { margin-right: 8px; color: var(--primary-color); }
+        .section { margin-bottom: 20px; }
+        .section-title { font-size: 1.3rem; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; margin-bottom: 15px; font-weight: 700; }
+        .job { margin-bottom: 20px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-size: 1rem; font-weight: 700; }
+        .job-dates { font-style: italic; color: #555; font-size: 0.85rem; }
+        .job-company { font-size: 0.95rem; font-weight: 500; margin: 2px 0; }
+        .skills-grid, .awards-grid, .courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px 20px; }
+        .skill-category h4, .award-item h4, .course-item h4 { font-size: 1rem; font-weight: 700; margin-bottom: 5px; }
+        .skill-category ul { list-style: none; padding: 0; margin: 0; }
+        .skill-category li { background-color: var(--subtle-gray); border-radius: 5px; padding: 5px 10px; margin-bottom: 5px; font-size: 0.9rem; }
+        @media print { body { background-color: #fff; } .container { box-shadow: none; margin: 0; padding: 1cm; max-width: 100%; } a { text-decoration: none; color: inherit; } }
     </style>
 </head>
 <body>
-
     <div class="container">
         <header class="header">
             <h1>Fábio Pereira da Costa</h1>
@@ -172,134 +38,28 @@
             <div class="contact-info">
                 <span><a href="mailto:webfcosta@gmail.com"><i class="fas fa-envelope"></i>webfcosta@gmail.com</a></span>
                 <span><a href="https://linkedin.com/in/webfabiocosta" target="_blank"><i class="fab fa-linkedin"></i>linkedin.com/in/webfabiocosta</a></span>
-                <span><a href="https://webfcdigital.github.io/webfabiocosta" target="_blank"><i class="fas fa-globe"></i>webfcdigital.github.io/webfabiocosta</a></span>
                 <span><a href="https://github.com/webfabiocosta" target="_blank"><i class="fab fa-github"></i>github.com/webfabiocosta</a></span>
+                <span><i class="fas fa-phone"></i>(55) 11 99434-3653</span>
             </div>
         </header>
-
-        <section class="section summary">
-            <h2 class="section-title">Professional Summary</h2>
-            <p>
-                Experienced Fullstack Developer passionate about transforming people's routines through technology. With a journey that began in 2003, I have contributed significantly to the software development market, including outstanding experiences at renowned agencies and a focused expertise since 2019 in developing applications for digital payments. I stand out for leading award-winning projects for large clients and serving as a technical reference for development and management teams, with a proven ability to articulate, develop, and manage complex projects.
-            </p>
+        <section class="section summary"><h2 class="section-title">Professional Summary</h2><p>My journey in technology began in 2003 as a development instructor. Since then, I have contributed significantly to the software market, with notable experience in Latin America's largest agencies. From 2019, I specialized in digital payment applications, leading implementations with PIX technology. My ability to articulate, develop, and manage large-scale projects sets me apart, serving as a technical reference for both development and management teams.</p></section>
+        <section class="section experience"><h2 class="section-title">Professional Experience</h2>
+            <div class="job"><div class="job-header"><h3 class="job-title">Tech Lead</h3><span class="job-dates">Jan 2024 - May 2024</span></div><h4 class="job-company">InnvoLabs (Client: Paraná Banco)</h4><p>Led development of an Online Renegotiation Portal (.NET Core Minimal API, ReactJS) and a Central Banking Correspondent Portal (.NET Core MVC 8).</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">.NET C# Developer</h3><span class="job-dates">Feb 2023 - Jan 2024</span></div><h4 class="job-company">K2 Partnering Solutions (Client: Linx)</h4><p>Developed solutions using .NET Framework/Core, Azure, Service Bus, SQL Server, and Microservices architecture.</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">Fullstack Developer</h3><span class="job-dates">Aug 2022 - Nov 2022</span></div><h4 class="job-company">K2 Partnering Solutions (Client: MercadoCar)</h4><p>Part of the "Delivery MCar" product team, managing deliveries using .Net Core, VueJs, RabbitMq, and Docker.</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">Fullstack Developer</h3><span class="job-dates">Oct 2021 - May 2022</span></div><h4 class="job-company">K2 Partnering Solutions (Client: Adiq)</h4><p>On the Adiq Wallet team, implemented features for payment integrations and PIX using .Net Core, AngularJS, SQL Server, and MongoDB.</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">Fullstack Developer</h3><span class="job-dates">Nov 2021 - Jan 2022</span></div><h4 class="job-company">Valtech</h4><p>Developed a Lambda function for API integration with the Algolia Index platform using Node.js and AWS services.</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">Back-End Developer</h3><span class="job-dates">Mar 2019 - Oct 2020</span></div><h4 class="job-company">Ideas Fractal</h4><p>Developed tools for the tourism market, including hotel, event, and payment platforms using .Net Core and AngularJs.</p></div>
+            <div class="job"><div class="job-header"><h3 class="job-title">Project Manager & Programming Supervisor</h3><span class="job-dates">Aug 2010 - Sep 2013</span></div><h4 class="job-company">RÀI Comunicação Group</h4><p>Managed projects using Agile/SCRUM and led the development team in creating applications for large clients.</p></div>
         </section>
-
-        <section class="section experience">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Software Architect</h3>
-                    <span class="job-dates">Oct 2024 - Jun 2025</span>
-                </div>
-                <h4 class="job-company">Mouts Info (Client: AB-Inbev)</h4>
-                <p>Led the technical and architectural definition of complex, mission-critical web applications, guiding teams in developing scalable, high-performance solutions focused on optimizing large data volumes.</p>
-            </div>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Software Architect / Tech Lead</h3>
-                    <span class="job-dates">Feb 2024 - Oct 2024</span>
-                </div>
-                <h4 class="job-company">Innvo Labs (Client: Parana Banco)</h4>
-                <p>Designed a multi-layered ASP.NET MVC application for managing proposals and contracts, featuring Dapper, ClosedXML for reports, and SOAP integrations. Led the team and defined development patterns.</p>
-            </div>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Senior Fullstack Developer</h3>
-                    <span class="job-dates">Feb 2023 - Jan 2024</span>
-                </div>
-                <h4 class="job-company">Linx</h4>
-                <p>Developed support tools for operations in an Azure DevOps environment for one of the largest software companies in Latin America.</p>
-            </div>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Senior Fullstack Developer</h3>
-                    <span class="job-dates">Nov 2021 - Apr 2023</span>
-                </div>
-                <h4 class="job-company">Valtech</h4>
-                <p>As part of a global team, served several projects with a focus on serverless and cloud technologies like Node.js and AWS Lambda.</p>
-            </div>
-            <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Senior Fullstack Developer</h3>
-                    <span class="job-dates">Aug 2022 - Dec 2022</span>
-                </div>
-                <h4 class="job-company">Mercadocar</h4>
-                <p>Participated in the development of the "Delivery MCar" product, responsible for managing deliveries to all company branches.</p>
-            </div>
-             <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Senior Fullstack Developer</h3>
-                    <span class="job-dates">Oct 2020 - Jun 2022</span>
-                </div>
-                <h4 class="job-company">Adiq Payments</h4>
-                <p>Part of the Adiq Wallet product development team, implementing features for payment integrations and PIX.</p>
-            </div>
-             <div class="job">
-                <div class="job-header">
-                    <h3 class="job-title">Project Manager & Dev Lead</h3>
-                    <span class="job-dates">Apr 2008 - Sep 2013</span>
-                </div>
-                <h4 class="job-company">Grupo Rai</h4>
-                <p>Led teams using SCRUM, supervised development, and performed fullstack development with ASP, PHP, and Flash.</p>
+        <section class="section skills"><h2 class="section-title">Technical Skills</h2><div class="skills-grid"><div class="skill-category"><h4>Back-End & APIs</h4><ul><li>C#, .NET / .NET Core</li><li>Node.js</li><li>Microservices & API Development</li><li>Entity Framework Core, SignalR</li></ul></div><div class="skill-category"><h4>Front-End & UI</h4><ul><li>Blazor, Angular, React</li><li>JavaScript, HTML, CSS/SASS</li><li>Bootstrap</li></ul></div><div class="skill-category"><h4>Cloud, DevOps & Messaging</h4><ul><li>Azure DevOps, GitHub Actions</li><li>Docker, Kubernetes</li><li>AWS, Azure</li><li>RabbitMQ, Azure Service Bus</li></ul></div><div class="skill-category"><h4>Databases & Caching</h4><ul><li>Microsoft SQL Server</li><li>MongoDB, Elasticsearch</li><li>Redis</li></ul></div></div></section>
+        <section class="section"><h2 class="section-title">Awards & Certifications</h2>
+            <div class="awards-grid">
+                <div class="award-item"><h4>Awards</h4><p>Best Marketing 2018, Lusophone Creativity Awards.</p></div>
+                <div class="course-item"><h4>Certifications</h4><p>Azure DevOps (2023), Advanced NODEJs (2015), Scrum Master (2013), ITIL Foundation (2013).</p></div>
             </div>
         </section>
-
-        <section class="section skills">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Back-End & APIs</h4>
-                    <ul>
-                        <li>C#, .NET / .NET Core</li>
-                        <li>Node.js</li>
-                        <li>Microservices & API Development</li>
-                        <li>Entity Framework Core, SignalR</li>
-                        <li>Swagger/OpenAPI, Serilog/NLog</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Front-End & UI</h4>
-                    <ul>
-                        <li>Blazor, Angular, React</li>
-                        <li>JavaScript, HTML, CSS/SASS</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Cloud, DevOps & Messaging</h4>
-                    <ul>
-                        <li>Azure DevOps, GitHub Actions</li>
-                        <li>Docker, Kubernetes</li>
-                        <li>AWS, Azure</li>
-                        <li>RabbitMQ, Azure Service Bus</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Databases & Caching</h4>
-                    <ul>
-                        <li>Microsoft SQL Server</li>
-                        <li>MongoDB, Elasticsearch</li>
-                        <li>Redis</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Security</h4>
-                    <ul>
-                        <li>IdentityServer4, Azure AD</li>
-                        <li>Single Sign-On</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section education">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h4>Internet Environment Management</h4>
-                <p>Nove de Julho University (UNINOVE) | 2003 - 2005</p>
-            </div>
-        </section>
+        <section class="section education"><h2 class="section-title">Education</h2><div class="education-item"><h4>Internet Environment Management</h4><p>Nove de Julho University (UNINOVE) | 2003 - 2005</p></div></section>
     </div>
-
 </body>
 </html>

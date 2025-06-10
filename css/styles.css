@@ -11212,3 +11212,12 @@ footer.bg-dark {
 body {
     overflow-x: hidden;
 }
+/* --- ESTILOS PARA NOVAS SEÇÕES --- */
+
+/* Estilo para a Seção de Prêmios */
+.award-item .fs-1 {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--bs-primary);
+    color: var(--bs-primary);
+}
