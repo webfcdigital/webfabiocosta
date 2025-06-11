@@ -1,43 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Currículo de Fabio Pereira da Costa" />
-        <meta name="author" content="Fabio Pereira da Costa" />
-        <title>Currículo - Fabio Pereira da Costa</title>
-        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/qpy0L0V.png" />
+        <meta name="description" content="Currículo de Fábio Costa, Desenvolvedor Fullstack Sênior" />
+        <meta name="author" content="Fábio Costa" />
+        <title>Fábio Costa - Currículo Profissional</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/profile.jpg" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://startbootstrap.github.io/startbootstrap-resume/css/styles.css" rel="stylesheet" />
         <link href="assets/css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <div class="language-switcher">
-            <button onclick="switchLanguage('pt')" class="lang-btn active" title="Português">PT-BR</button>
-            <button onclick="switchLanguage('en')" class="lang-btn" title="English">EN-US</button>
+            <button id="lang-en" class="btn btn-secondary btn-sm active">EN</button>
+            <button id="lang-pt" class="btn btn-secondary btn-sm">PT</button>
         </div>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Fabio Pereira da Costa</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Foto de Fabio Pereira" /></span>
+                <span class="d-block d-lg-none">Fábio Costa</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Foto de Perfil de Fábio Costa" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a></li>
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiência</a></li>
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#formacao">Formação</a></li>
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#premios">Prêmios</a></li>
-                    <li class="nav-item lang pt"><a class="nav-link js-scroll-trigger" href="#cursos">Cursos</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item lang en" style="display:none;"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span lang="en">About</span><span lang="pt" style="display:none;">Sobre</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span lang="en">Experience</span><span lang="pt" style="display:none;">Experiência</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span lang="en">Education</span><span lang="pt" style="display:none;">Formação</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span lang="en">Skills</span><span lang="pt" style="display:none;">Habilidades</span></a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><span lang="en">Awards</span><span lang="pt" style="display:none;">Prémios</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -45,462 +38,282 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Fabio
-                        <span class="text-primary">Pereira da Costa</span>
+                        Fábio
+                        <span class="text-primary">Costa</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Rua Cecília Bonilha, 233 · São Paulo / SP · (11) 99434-3653 ·
+                        (55) 11 99434-3653 ·
                         <a href="mailto:webfcosta@gmail.com">webfcosta@gmail.com</a>
                     </div>
-                    <div class="lang pt">
-                        <p class="lead mb-5">Minha jornada no mundo da tecnologia começou em 2003, atuando como instrutor de informática e desenvolvimento web. Como desenvolvedor fullstack, possuo vasta experiência na criação de experiências perfeitas e na liderança de projetos premiados, utilizando diversas tecnologias de front-end e back-end. Meu diferencial é a grande capacidade de articulação e a experiência em desenvolvimento e gestão de grandes projetos, servindo como referência técnica tanto para a equipe de desenvolvimento quanto para a de gestão.</p>
-                        <div class="d-flex flex-column flex-md-row justify-content-start">
-                             <a class="btn btn-primary btn-lg me-md-3 mb-3 mb-md-0" href="pdf/curriculo_fabio_pereira_pt.pdf" download>
-                                <i class="fas fa-download me-2"></i>
-                                Baixar Currículo (PDF)
-                            </a>
+                    <div lang="en">
+                        <p class="lead mb-5">My journey in the world of technology began in 2003 working as a computer and web development instructor. After completing university training in Internet Environment Management and Computer Networks at Uninove, I started working as an assistant to a Microsoft beta tester programmer. From then on, I began to work heavily in the software development market, having great success in the advertising market, with notable stints at the largest agencies and producers in Latin America. From 2019 onwards I started specializing in the development of applications aimed at digital payments, having worked on the implementation of tools using PIX technology as well as integrations with the most varied payment platforms. As a fullstack developer, I have extensive experience in both frontend and backend development, creating perfect user experiences and leading award-winning projects for large clients.</p>
+                        <div class="social-icons">
+                             <a class="social-icon" id="pdf-download-link" href="assets/pdf/FabioCostaCV-EN-2025.pdf" target="_blank"><i class="fas fa-download"></i></a>
                         </div>
                     </div>
-                    <div class="lang en" style="display:none;">
-                         <p class="lead mb-5">My journey in the world of technology began in 2003 working as a computer and web development instructor. As a fullstack developer, I have extensive experience in developing perfect experiences and leading award-winning projects using various front-end and back-end technologies. What sets me apart is my great ability to articulate and vast experience in developing and managing large projects, serving as a technical reference for both the development team and the management team.</p>
-                         <div class="d-flex flex-column flex-md-row justify-content-start">
-                             <a class="btn btn-primary btn-lg me-md-3 mb-3 mb-md-0" href="pdf/curriculo_fabio_pereira_en.pdf" download>
-                                <i class="fas fa-download me-2"></i>
-                                Download Resume (PDF)
-                            </a>
+                    <div lang="pt" style="display:none;">
+                        <p class="lead mb-5">A minha jornada no mundo da tecnologia começou em 2003, atuando como instrutor de informática e desenvolvimento web. Após concluir a formação universitária em Gestão de Ambientes de Internet e Redes de Computadores pela Uninove, comecei a trabalhar como assistente de um programador beta tester da Microsoft. A partir daí, passei a atuar fortemente no mercado de desenvolvimento de software, obtendo grande sucesso no mercado publicitário, com passagens notáveis pelas maiores agências e produtoras da América Latina. A partir de 2019, comecei a especializar-me no desenvolvimento de aplicações voltadas para pagamentos digitais, tendo trabalhado na implementação de ferramentas com tecnologia PIX, bem como integrações com as mais variadas plataformas de pagamento. Como desenvolvedor fullstack, possuo vasta experiência tanto no desenvolvimento frontend quanto no backend, criando experiências de utilizador perfeitas e liderando projetos premiados para grandes clientes.</p>
+                         <div class="social-icons">
+                             <a class="social-icon" id="pdf-download-link-pt" href="assets/pdf/FabioCostaCV-PT-2025.pdf" target="_blank"><i class="fas fa-download"></i></a>
                         </div>
-                    </div>
-                    <div class="social-icons mt-5">
-                        <a class="social-icon" href="https://www.linkedin.com/in/fabiopereiracosta/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/webfcosta" target="_blank"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="skype:instructorfabio@hotmail.com?chat"><i class="fab fa-skype"></i></a>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-          <section class="resume-section" id="experience">
-    <div class="resume-section-content">
-        <h2 class="mb-5 lang pt" id="experiencia">Experiência</h2>
-        <h2 class="mb-5 lang en" style="display:none;" id="experience_en">Experience</h2>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack Sênior</h3>
-                    <div class="subheading mb-3">Mouts Info (Cliente: AB-Inbev)</div>
-                    <p>Atuando como desenvolvedor fullstack sênior, participei do desenvolvimento de produtos para a área de pessoas utilizando tecnologias diversas como: NestJs, ReactJS, Prysma, Azure DevOps, AKS.</p>
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><span lang="en">Experience</span><span lang="pt" style="display:none;">Experiência</span></h2>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Senior Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack Sênior</span></h3>
+                            <div class="subheading mb-3">AB-Inbev by Mouts Info</div>
+                            <p>
+                                <span lang="en">Acting as senior fullstack developer, I developed some tools for the people products area like dashboards about employee targets and a policy approvals application for the legal department.  Technologies: NestJs, ReactJs, PrysmaORM, Typescript, Docker, AzureDevOps, Jest, SQL Server, Apollo, GraphQL.</span>
+                                <span lang="pt" style="display:none;">Atuando como desenvolvedor fullstack sênior, desenvolvi algumas ferramentas para a área de produtos de gente, como dashboards sobre metas de funcionários e uma aplicação de aprovação de políticas para o departamento jurídico. Tecnologias: NestJs, ReactJs, PrysmaORM, Typescript, Docker, AzureDevOps, Jest, SQL Server, Apollo, GraphQL.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">October/2024 - June/2025</span><span lang="pt" style="display:none;">Outubro/2024 - Junho/2025</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Tech Lead</span><span lang="pt" style="display:none;">Líder Técnico</span></h3>
+                            <div class="subheading mb-3">InnvoLabs</div>
+                            <p>
+                                <span lang="en">As a tech lead, I led projects directly with the client Paraná Banco in developing applications: Online Renegotiation Portal, Central Banking Correspondent Portal, and Password Reset Portal. Technologies: .NET Core Minimal API, ReactJS, .NET Core MVC 8, SQL Server, Azure Devops.</span>
+                                <span lang="pt" style="display:none;">Como líder técnico, liderei projetos diretamente com o cliente Paraná Banco no desenvolvimento de aplicações: Portal de Renegociação Online, Portal do Correspondente Bancário Central e Portal de Redefinição de Senha. Tecnologias: .NET Core Minimal API, ReactJS, .NET Core MVC 8, SQL Server, Azure Devops.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">January/2024 - October/2024</span><span lang="pt" style="display:none;">Janeiro/2024 - Outubro/2024</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Senior .NET C# Developer</span><span lang="pt" style="display:none;">Desenvolvedor Sênior .NET C#</span></h3>
+                            <div class="subheading mb-3">Consultoria K2 Partnering Solutions (Client: Linx)</div>
+                            <p>
+                                <span lang="en">Acting as a Senior NET C# Developer (.Net Framework, .NET Core and .NET 5 and 6) working with Azure, Azure DevOps, Messaging (Azure Service Bus), SQL Server, ORM (Dapper and Entity Framework), Microservices, REST and SOAP APIs, .NET Web Forms, .NET MVC, Angular, and GIT.</span>
+                                <span lang="pt" style="display:none;">Atuando como Desenvolvedor Sênior .NET C# (.Net Framework, .NET Core e .NET 5 e 6) trabalhando com Azure, Azure DevOps, Mensageria (Azure Service Bus), SQL Server, ORM (Dapper e Entity Framework), Microsserviços, APIs REST e SOAP, .NET Web Forms, .NET MVC, Angular e GIT.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">February/2023 - January/2024</span><span lang="pt" style="display:none;">Fevereiro/2023 - Janeiro/2024</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack</span></h3>
+                            <div class="subheading mb-3">Consultoria K2 Partnering Solutions (Client: MercadoCar)</div>
+                            <p>
+                                <span lang="en">As a fullstack developer, I was part of the Delivery MCar product development team, responsible for managing deliveries to all of the company's branches. Technologies used: .Net Core 3, PostgreSql, VueJs, NodeJS, RabbitMq, Docker, Nugget, Azure DevOps, Entity Framework Core, Swagger.</span>
+                                <span lang="pt" style="display:none;">Atuando como desenvolvedor fullstack, fiz parte da equipe de desenvolvimento do produto Delivery MCar, responsável por gerenciar as entregas para todas as filiais da empresa. Tecnologias utilizadas: .Net Core 3, PostgreSql, VueJs, NodeJS, RabbitMq, Docker, Nugget, Azure DevOps, Entity Framework Core, Swagger.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">August/2022 - November/2022</span><span lang="pt" style="display:none;">Agosto/2022 - Novembro/2022</span></span></div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack</span></h3>
+                            <div class="subheading mb-3">Consultoria K2 Partnering Solutions (Client: Adiq - Payment solutions)</div>
+                            <p>
+                                <span lang="en">As a fullstack developer, I was part of the Adiq Wallet product development team, implementing several features related to payment and PIX integrations. Technologies used: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs9, NodeJS, XUNIT, Entity Framework 6, Swagger, Openshift, Kibana, Jenkins, Nugget.</span>
+                                <span lang="pt" style="display:none;">Atuando como desenvolvedor fullstack, fiz parte da equipe de desenvolvimento do produto Adiq Wallet, implementando diversas funcionalidades relacionadas a pagamentos e integrações PIX. Tecnologias utilizadas: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs9, NodeJS, XUNIT, Entity Framework 6, Swagger, Openshift, Kibana, Jenkins, Nugget.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">October/2021 - May/2022</span><span lang="pt" style="display:none;">Outubro/2021 - Maio/2022</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack</span></h3>
+                            <div class="subheading mb-3">Valtech</div>
+                            <p>
+                                <span lang="en">As a fullstack developer, I am part of a global team serving several projects. For Emerald CMS, I provided consulting in the development of a Lambda function for internal API integration with the Algolia Index platform. Technologies used: .NodeJs 14, AWS Lambda Functions, AWS SAM, AWS API Gateway.</span>
+                                <span lang="pt" style="display:none;">Atuando como desenvolvedor fullstack, faço parte de uma equipe global atendendo a diversos projetos. Para o Emerald CMS, prestei consultoria no desenvolvimento de uma função Lambda para integração de API interna com a plataforma Algolia Index. Tecnologias utilizadas: .NodeJs 14, AWS Lambda Functions, AWS SAM, AWS API Gateway.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">November/2021 - January/2022</span><span lang="pt" style="display:none;">Novembro/2021 - Janeiro/2022</span></span></div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Backend Developer</span><span lang="pt" style="display:none;">Desenvolvedor Backend</span></h3>
+                            <div class="subheading mb-3">NBA House Digital</div>
+                            <p>
+                                <span lang="en">In partnership with VrGlass, I participated in the project for NBA House Digital, a virtual environment for fans. I developed the matchmaking system. Technologies used: NodeJs 14, Colyseus, AWS API Gateway, MongoDB.</span>
+                                <span lang="pt" style="display:none;">Em parceria com a VrGlass, participei do projeto NBA House Digital, um ambiente virtual para fãs. Desenvolvi o sistema de matchmaking. Tecnologias utilizadas: NodeJs 14, Colyseus, AWS API Gateway, MongoDB.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">April/2021 - June/2021</span><span lang="pt" style="display:none;">Abril/2021 - Junho/2021</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Backend Developer</span><span lang="pt" style="display:none;">Desenvolvedor Backend</span></h3>
+                            <div class="subheading mb-3">Ideas Fractal</div>
+                            <p>
+                                <span lang="en">Technology development consultancy acting as a back-end developer in the development of tools for the national and international tourism market. Main projects: Ideas Fractal Events, Hoteis, Payments, and Information Planet. Technologies: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs 7, Redis, NodeJS.</span>
+                                <span lang="pt" style="display:none;">Consultoria de desenvolvimento de tecnologia atuando como desenvolvedor back-end no desenvolvimento de ferramentas para o mercado de turismo nacional e internacional. Principais projetos: Ideas Fractal Events, Hoteis, Payments e Information Planet. Tecnologias: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs 7, Redis, NodeJS.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">March/2019 - October/2020</span><span lang="pt" style="display:none;">Março/2019 - Outubro/2020</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack</span></h3>
+                            <div class="subheading mb-3">CoilWs</div>
+                            <p>
+                                <span lang="en">Consulting in technology development acting as fullstack developer of the new virtual store for the American industry of magnetic inductors. Main project: CoilWS Online Store. Technologies used: Wordpress, Laravel, MySql.</span>
+                                <span lang="pt" style="display:none;">Consultoria em desenvolvimento de tecnologia atuando como desenvolvedor fullstack da nova loja virtual para a indústria americana de indutores magnéticos. Principal projeto: Loja Online CoilWS. Tecnologias utilizadas: Wordpress, Laravel, MySql.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">January/2019 - March/2019</span><span lang="pt" style="display:none;">Janeiro/2019 - Março/2019</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Backend Developer</span><span lang="pt" style="display:none;">Desenvolvedor Backend</span></h3>
+                            <div class="subheading mb-3">Megaleios Web Development</div>
+                            <p>
+                                <span lang="en">Consulting as a back-end developer on a specific project for Ebox Digital, developing new functionalities for their digital document scanning platform. Main projects: Ebox Digital Platform, BeeJob App. Technologies: .NET Core 2.0, MongoDb, ElasticSearch, AngularJs, VueJS, AWS, Azure DevOps, NodeJS.</span>
+                                <span lang="pt" style="display:none;">Consultoria como desenvolvedor back-end em um projeto específico para a Ebox Digital, desenvolvendo novas funcionalidades para sua plataforma de digitalização de documentos. Principais projetos: Plataforma Ebox Digital, App BeeJob. Tecnologias: .NET Core 2.0, MongoDb, ElasticSearch, AngularJs, VueJS, AWS, Azure DevOps, NodeJS.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">September/2018 - January/2019</span><span lang="pt" style="display:none;">Setembro/2018 - Janeiro/2019</span></span></div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Backend Developer</span><span lang="pt" style="display:none;">Desenvolvedor Backend</span></h3>
+                            <div class="subheading mb-3">The Group Live Marketing</div>
+                            <p>
+                                <span lang="en">Consulting as back-end developer on several projects for clients such as: Samsung, Oakley, Banco Santander, Claro and Faber Castell. Main projects: Banco Santander invitation system, Volkswagen Repairer Portal, and the presence confirmation tool for "The biggest corporate event in Brazil". Technologies: .NET Framework 4.5+, ENTITY FRAMEWORK, HangFire, Unity, SOLID, SQL SERVER.</span>
+                                <span lang="pt" style="display:none;">Consultoria como desenvolvedor back-end em diversos projetos para clientes como: Samsung, Oakley, Banco Santander, Claro e Faber Castell. Principais projetos: sistema de convites do Banco Santander, Portal do Reparador Volkswagen e a ferramenta de confirmação de presença para "O maior evento corporativo do Brasil". Tecnologias: .NET Framework 4.5+, ENTITY FRAMEWORK, HangFire, Unity, SOLID, SQL SERVER.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">July/2016 - April/2018</span><span lang="pt" style="display:none;">Julho/2016 - Abril/2018</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Fullstack Developer</span><span lang="pt" style="display:none;">Desenvolvedor Fullstack</span></h3>
+                            <div class="subheading mb-3">Cantina Web</div>
+                            <p>
+                                <span lang="en">As a fullstack developer, I was responsible for developing API and applications for the Responsible x Schools x Canteens relationship. Main projects: Cantina Web API, CantinaWeb App for Responsible Persons, and other administrative apps. Technologies: SailsJS, AngularJS, AWS, DynamoDB, MongoDb, Blueprint, VueJS, NodeJS.</span>
+                                <span lang="pt" style="display:none;">Como desenvolvedor fullstack, fui responsável pelo desenvolvimento de API e aplicações para a relação Responsáveis x Escolas x Cantinas. Principais projetos: API Cantina Web, App CantinaWeb para Responsáveis e outras aplicações administrativas. Tecnologias: SailsJS, AngularJS, AWS, DynamoDB, MongoDb, Blueprint, VueJS, NodeJS.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">June/2015 - April/2016</span><span lang="pt" style="display:none;">Junho/2015 - Abril/2016</span></span></div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Project Manager</span><span lang="pt" style="display:none;">Gerente de Projetos</span></h3>
+                            <div class="subheading mb-3">RÀI Comunicação Group</div>
+                            <p>
+                                <span lang="en">Managed projects using Agile and SCRUM methodologies, preparing and controlling schedules, monitoring customers with the service team, developing architecture for use, maintenance and updating projects. Main results: Subway MicroMarketing Management System, Liberty Seguros Project Management System, Kopenhagen Christmas Campaign.</span>
+                                <span lang="pt" style="display:none;">Gerenciei projetos utilizando metodologias Ágeis e SCRUM, elaborando e controlando cronogramas, acompanhando clientes com a equipe de atendimento, desenvolvendo arquitetura para uso, manutenção e atualização de projetos. Principais resultados: Sistema de Gestão de Micromarketing do Subway, Sistema de Gestão de Projetos da Liberty Seguros, Campanha de Natal da Kopenhagen.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">August/2012 - September/2013</span><span lang="pt" style="display:none;">Agosto/2012 - Setembro/2013</span></span></div>
+                    </div>
+            
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0"><span lang="en">Programming Supervisor</span><span lang="pt" style="display:none;">Supervisor de Programação</span></h3>
+                            <div class="subheading mb-3">RÀI Comunicação Group</div>
+                            <p>
+                                <span lang="en">Led the development team in creating applications for several large clients, participated in meetings with clients to capture demands, and provided advanced technology solutions to team members. Main results: Sistema de Delivery Subway, Promotion system for Kawasaki dealers, Campaign planning tool.</span>
+                                <span lang="pt" style="display:none;">Liderei a equipe de desenvolvimento na criação de aplicações para diversos grandes clientes, participei de reuniões com clientes para captar demandas e forneci soluções tecnológicas avançadas aos membros da equipe. Principais resultados: Sistema de Delivery Subway, Sistema de promoção para concessionárias Kawasaki, Ferramenta de planejamento de campanha.</span>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><span lang="en">August/2010 - August/2012</span><span lang="pt" style="display:none;">Agosto/2010 - Agosto/2012</span></span></div>
+                    </div>
+            
                 </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Senior Fullstack Developer</h3>
-                    <div class="subheading mb-3">Mouts Info (Client: AB-Inbev)</div>
-                    <p>Working as a senior fullstack developer, I participated in the development of products for the people area, using diverse technologies such as: NestJs, ReactJS, Prisma, Azure DevOps, AKS.</p>
-                </div>
-            </div>
-            <div class="flex-shrink-0">
-                <span class="text-primary lang pt">Outubro 2024 - Junho 2025</span>
-                <span class="text-primary lang en" style="display:none;">October 2024 - June 2025</span>
-            </div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Tech Lead</h3>
-                    <div class="subheading mb-3">InnvoLabs (Cliente: Paraná Banco) </div>
-                    <p>Atuei como Tech Lead no cliente Paraná Banco no desenvolvimento do Portal de Renegociação de Contas e do Portal do Correspondente Bancário.  Tecnologias utilizadas: .NET CORE 8, SQL Server, Azure DevOps, SonarQube, Docker, Kubernetes, ReactJs. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Tech Lead</h3>
-                    <div class="subheading mb-3">InnvoLabs (Client: Paraná Banco) </div>
-                    <p>As Tech lead I worked inside the client Paraná Banco on development of Renegociation Bill Portal and Banking Correspondent Portal.  Utilized technologies: .NET CORE 8, SQL Server, Azure DevOps, SonarQube, Docker, Kubernetes, ReactJs. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Fevereiro 2024 - Junho 2024 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                 <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack Sênior</h3>
-                    <div class="subheading mb-3">Linx by K2 Partners </div>
-                    <p>Trabalhei no desenvolvimento de diversas ferramentas de apoio à operação de uma das maiores empresas de desenvolvimento de software da América Latina, com foco no ambiente Azure DevOps.  Tecnologias utilizadas: .Net Core 3, Azure ServiceBus, Azure Functions, Azure API Management, Azure KeyVault, CodeIgniter PHP, Dapper, .Net Core Minimal Apis, SQL Server, Redis Server. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Senior Fullstack Developer</h3>
-                    <div class="subheading mb-3">Linx by K2 Partners </div>
-                    <p>I worked on developing several tools to support the operation of one of the largest software development companies in Latin America focusing on the Azure DevOps environment.  Technologies used: .Net Core 3, Azure ServiceBus, Azure Functions, Azure API Management, Azure KeyVault, CodeIgniter PHP, Dapper, .Net Core Minimal Apis, SQL Server, Redis Server. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Fevereiro 2023 - Dezembro 2024 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-                    <div class="subheading mb-3">MercadoCar by K2 Partners </div>
-                    <p>Integrei a equipe de desenvolvimento do produto *Delivery MCar*, responsável por gerenciar as entregas de todas as filiais da empresa.  Tecnologias utilizadas: .Net Core 3, PostgreSql, VueJs, NodeJS, RabbitMq, Docker, Azure DevOps. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Fullstack Developer</h3>
-                    <div class="subheading mb-3">MercadoCar by K2 Partners </div>
-                    <p>Acting as a fullstack developer, I integrated the *Delivery MCar* product development team, responsible for managing the deliveries of all the company's branches.  Technologies used: .Net Core 3, PostgreSql, VueJs, NodeJS, RabbitMq, docker, Azure DevOps. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Agosto 2022 - Novembro 2022 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-                    <div class="subheading mb-3">Adiq - Soluções de Pagamento by K2 Partners </div>
-                    <p>Fiz parte da equipe de desenvolvimento do produto Adiq Wallet, implementando diversas funcionalidades relacionadas a pagamentos e integrações PIX.  Tecnologias utilizadas: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs9, NodeJS. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Fullstack Developer</h3>
-                    <div class="subheading mb-3">Adiq - Payment Solutions by K2 Partners </div>
-                    <p>Acting as a fullstack developer, I joined the Adiq Wallet product development team, implementing several features related to payment and PIX integrations.  Technologies used: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs9, NodeJS. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Outubro 2021 - Maio 2022 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                 <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-                    <div class="subheading mb-3">Valtech </div>
-                    <p>Fiz parte de uma equipe mundial trabalhando em diversos projetos, incluindo consultoria no desenvolvimento de funções Lambda para integração de APIs internas com Algolia Index e Elastic Search.  Participei também do projeto NBA House Digital, um ambiente virtual para fãs da NBA.  Tecnologias utilizadas: NodeJs 14, AWS Lambda, AWS SAM, AWS API Gateway, Elastic Search, Colyseus, MongoDB. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Fullstack Developer</h3>
-                    <div class="subheading mb-3">Valtech </div>
-                    <p>Working as a fullstack developer, I am part of a worldwide team working on several projects.  Including consulting in the development of Lambda function for internal api integration with Algolia Index and Elastic Search,  and participating in the project for NBA House Digital.  Technologies used: NodeJs 14, AWS Lambda Functions, AWS SAM, AWS API Gateway, Elastic Search, Colyseus, MongoDB. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Novembro 2020 - Junho 2021 </span></div>
-        </div>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                 <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Back-end</h3>
-                    <div class="subheading mb-3">Ideas Fractal </div>
-                    <p>Consultoria em desenvolvimento de tecnologia atuando como desenvolvedor back-end no desenvolvimento de ferramentas voltadas para o mercado de turismo nacional e internacional.  Tecnologias utilizadas: .Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs 7, Redis, NodeJS. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Back-end Developer</h3>
-                    <div class="subheading mb-3">Ideas Fractal </div>
-                    <p>Consulting in technology development acting as back-end developer in the development of tools aimed at the national tourism market and International.  Technologies used: Net Core 2.2, SOLID, HANGFIRE, SQL SERVER, MONGODB, AngularJs 7, Redis, NodeJS. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Março 2019 - Outubro 2020 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                 <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-                    <div class="subheading mb-3">CoilWs </div>
-                    <p>Consultoria no desenvolvimento da nova loja virtual para a indústria americana de indutores magnéticos, resistores, entre outros.  Tecnologias utilizadas: Wordpress, Laravel, MySql. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Fullstack Developer</h3>
-                    <div class="subheading mb-3">CoilWs </div>
-                    <p>Consulting in technology development working as a fullstack developer of the new virtual store for the American industry of magnetic inductors, resistors, among others.  Technologies used: Wordpress, Laravel, MySql. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Janeiro 2019 - Março 2019 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Back-end</h3>
-                    <div class="subheading mb-3">Megaleios Web Development </div>
-                    <p>Consultoria em um projeto específico para o cliente Ebox Digital, desenvolvendo novas funcionalidades na plataforma que mantinha toda a operação da empresa de digitalização de documentos.  Atuei na manutenção e desenvolvimento de novas funcionalidades em aplicação .NET com componente Lucene.NET para gestão de documentos digitalizados e otimização de consultas no ElasticSearch.  Tecnologias utilizadas: .NET Core 2.0, MongoDb, ElasticSearch, AngularJs, VueJS, AWS, AzureDevOps, NodeJS. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Back-end Developer</h3>
-                    <div class="subheading mb-3">Megaleios Web Development </div>
-                    <p>Consulting in technology development acting as back-end developer in a specific project for the Ebox Digital client in the development of new functionalities in the platform.  Provided maintenance and developed new functionalities on .NET application with Lucene.NET component for management of digitized documents and optimized existing ElasticSearch queries functions.  Technologies used: .NET Core 2.0, MongoDb, ElasticSearch, AngularJs, VueJS, AWS, AzureDevOps, NodeJS. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Setembro 2018 - Janeiro 2019 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Back-end</h3>
-                    <div class="subheading mb-3">The Group Live Marketing </div>
-                    <p>Desenvolvimento em diversos projetos para clientes como: Samsung, Oakley, Banco Santander, Claro e Faber Castell.  Projetos notáveis incluem o sistema de convites do Banco Santander e a ferramenta de confirmação de presença para "O maior evento corporativo do Brasil".  Tecnologias utilizadas: .NET Framework 4.5+, ENTITY FRAMEWORK, HangFire, Unity, SOLID, SQL SERVER. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Back-end Developer</h3>
-                    <div class="subheading mb-3">The Group Live Marketing </div>
-                    <p>Consulting in technology development acting as developer back-end in several projects for clients such as: Samsung, Oakley, Banco Santander, Claro and Faber Castell.  Notable projects include the Banco Santander invitation system and the presence confirmation tool for "The biggest corporate event in Brazil".  Technologies used: .NET Framework 4.5+, ENTITY FRAMEWORK, HangFire, Unity, SOLID, SQL SERVER. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Julho 2016 - Abril 2018 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Desenvolvedor Fullstack</h3>
-                    <div class="subheading mb-3">CantinaWeb </div>
-                    <p>Fui responsável por desenvolver APIs e aplicações voltadas para o relacionamento entre Responsáveis, Escolas e Cantinas.  Tecnologias utilizadas: SailsJS, AngularJS, AWS, DynamoDB, MongoDb, VueJS, NodeJS. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Fullstack Developer</h3>
-                    <div class="subheading mb-3">CantinaWeb </div>
-                    <p>I was responsible for developing API and applications aimed at the Responsible x Schools x canteens relationship.  Technologies used: SailsJS, AngularJS, AWS, DynamoDB, MongoDb, Blueprint, VueJS, NodeJS. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Junho 2015 - Janeiro 2016 </span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Gerente de Projetos</h3>
-                    <div class="subheading mb-3">Grupo RÀI Comunicação </div>
-                    <p>Gerenciei projetos utilizando metodologias Ágeis e SCRUM, elaboração e controle de cronogramas e acompanhamento de clientes com a equipe de atendimento. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Project Manager</h3>
-                    <div class="subheading mb-3">Grupo RÀI Comunicação </div>
-                    <p>Manage projects using Agile and SCRUM methodologies, preparation and control of schedules, follow-up of customers with the service team. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Agosto 2012 - Setembro 2013 </span></div>
-        </div>
-        
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="lang pt">
-                    <h3 class="mb-0">Supervisor de Programação</h3>
-                    <div class="subheading mb-3">Grupo RÀI Comunicação </div>
-                    <p>Liderei a equipe de desenvolvimento na criação de aplicações para diversos clientes de grande porte, participei de reuniões com clientes para levantamento de demandas e orientei a equipe de desenvolvimento. </p>
-                </div>
-                <div class="lang en" style="display:none;">
-                    <h3 class="mb-0">Programming Supervisor</h3>
-                    <div class="subheading mb-3">Grupo RÀI Comunicação </div>
-                    <p>Lead the development team in creating applications for several large customers, participate in meetings with customers to capture demands, guide the development team. </p>
-                </div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Agosto 2010 - Agosto 2012 </span></div>
-        </div>
-
-    </div>
-</section>
+            </section>
             <hr class="m-0" />
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5 lang pt">Formação Acadêmica</h2>
-                    <h2 class="mb-5 lang en" style="display:none;">Academic Background</h2>
+                    <h2 class="mb-5"><span lang="en">Education</span><span lang="pt" style="display:none;">Formação</span></h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                             <div class="lang pt">
-                                <h3 class="mb-0">Universidade Nove de Julho</h3>
-                                <div class="subheading mb-3">Gestão de Ambientes de Internet</div>
-                            </div>
-                             <div class="lang en" style="display:none;">
-                                <h3 class="mb-0">Universidade Nove de Julho</h3>
-                                <div class="subheading mb-3">Management of Internet Environments</div>
-                            </div>
+                            <h3 class="mb-0">University Ninth of July</h3>
+                            <div class="subheading mb-3"><span lang="en">Internet Environment Management</span><span lang="pt" style="display:none;">Gestão de Ambientes de Internet</span></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2003 - 2005</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <div class="lang pt">
-                                <h3 class="mb-0">Universidade Nove de Julho</h3>
-                                <div class="subheading mb-3">Curso Livre, Tecnologia em Organização da Informação</div>
-                            </div>
-                             <div class="lang en" style="display:none;">
-                                <h3 class="mb-0">Universidade Nove de Julho</h3>
-                                <div class="subheading mb-3">Open course, Technology in Information Organization</div>
-                            </div>
+                            <h3 class="mb-0">University Ninth of July</h3>
+                            <div class="subheading mb-3"><span lang="en">Information Organization Technology (Open course)</span><span lang="pt" style="display:none;">Tecnologia da Organização da Informação (Curso livre)</span></div>
                         </div>
-                         <div class="flex-shrink-0"><span class="text-primary">2005 - 2005</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2005</span></div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5 lang pt" id="habilidades">Habilidades</h2>
-                    <h2 class="mb-5 lang en" style="display:none;" id="skills_en">Skills</h2>
-            
-                    <div class="lang pt">
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Back-End</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">.NET Core</span>
-                                <span class="skill-badge me-2 mb-2">NodeJS</span>
-                                <span class="skill-badge me-2 mb-2">PHP</span>
-                                <span class="skill-badge me-2 mb-2">NestJs</span>
-                                <span class="skill-badge me-2 mb-2">Entity Framework Core</span>
-                                <span class="skill-badge me-2 mb-2">Dapper</span>
-                                <span class="skill-badge me-2 mb-2">SOLID</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Front-End</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">React</span>
-                                <span class="skill-badge me-2 mb-2">Angular / AngularJS</span>
-                                <span class="skill-badge me-2 mb-2">VueJS</span>
-                                <span class="skill-badge me-2 mb-2">Blazor</span>
-                                <span class="skill-badge me-2 mb-2">JavaScript / TypeScript</span>
-                                <span class="skill-badge me-2 mb-2">HTML5 & CSS3</span>
-                                <span class="skill-badge me-2 mb-2">SASS</span>
-                                <span class="skill-badge me-2 mb-2">Bootstrap</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Bancos de Dados & Dados</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">SQL Server</span>
-                                <span class="skill-badge me-2 mb-2">MongoDB</span>
-                                <span class="skill-badge me-2 mb-2">PostgreSQL</span>
-                                <span class="skill-badge me-2 mb-2">Prisma</span>
-                                <span class="skill-badge me-2 mb-2">Elasticsearch</span>
-                                <span class="skill-badge me-2 mb-2">Redis</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Cloud, DevOps & Ferramentas</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">Azure DevOps</span>
-                                <span class="skill-badge me-2 mb-2">AWS</span>
-                                <span class="skill-badge me-2 mb-2">Docker</span>
-                                <span class="skill-badge me-2 mb-2">Kubernetes (AKS)</span>
-                                <span class="skill-badge me-2 mb-2">CI/CD</span>
-                                <span class="skill-badge me-2 mb-2">RabbitMQ / Azure Service Bus</span>
-                                <span class="skill-badge me-2 mb-2">Swagger / OpenAPI</span>
-                                <span class="skill-badge me-2 mb-2">Serilog / NLog</span>
-                                <span class="skill-badge me-2 mb-2">SignalR</span>
-                                <span class="skill-badge me-2 mb-2">SonarQube</span>
-                            </div>
-                        </div>
-                         <div class="mb-4">
-                            <div class="subheading mb-3">Autenticação & Metodologias</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">IdentityServer4 / Azure AD</span>
-                                <span class="skill-badge me-2 mb-2">Metodologias Ágeis</span>
-                                <span class="skill-badge me-2 mb-2">Scrum</span>
-                                <span class="skill-badge me-2 mb-2">Kanban</span>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="lang en" style="display:none;">
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Back-End</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">.NET Core</span>
-                                <span class="skill-badge me-2 mb-2">NodeJS</span>
-                                <span class="skill-badge me-2 mb-2">PHP</span>
-                                <span class="skill-badge me-2 mb-2">NestJs</span>
-                                <span class="skill-badge me-2 mb-2">Entity Framework Core</span>
-                                <span class="skill-badge me-2 mb-2">Dapper</span>
-                                <span class="skill-badge me-2 mb-2">SOLID</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Front-End</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">React</span>
-                                <span class="skill-badge me-2 mb-2">Angular / AngularJS</span>
-                                <span class="skill-badge me-2 mb-2">VueJS</span>
-                                <span class="skill-badge me-2 mb-2">Blazor</span>
-                                <span class="skill-badge me-2 mb-2">JavaScript / TypeScript</span>
-                                <span class="skill-badge me-2 mb-2">HTML5 & CSS3</span>
-                                <span class="skill-badge me-2 mb-2">SASS</span>
-                                <span class="skill-badge me-2 mb-2">Bootstrap</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Databases & Data</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">SQL Server</span>
-                                <span class="skill-badge me-2 mb-2">MongoDB</span>
-                                <span class="skill-badge me-2 mb-2">PostgreSQL</span>
-                                <span class="skill-badge me-2 mb-2">Prisma</span>
-                                <span class="skill-badge me-2 mb-2">Elasticsearch</span>
-                                <span class="skill-badge me-2 mb-2">Redis</span>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="subheading mb-3">Cloud, DevOps & Tools</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">Azure DevOps</span>
-                                <span class="skill-badge me-2 mb-2">AWS</span>
-                                <span class="skill-badge me-2 mb-2">Docker</span>
-                                <span class="skill-badge me-2 mb-2">Kubernetes (AKS)</span>
-                                <span class="skill-badge me-2 mb-2">CI/CD</span>
-                                <span class="skill-badge me-2 mb-2">RabbitMQ / Azure Service Bus</span>
-                                <span class="skill-badge me-2 mb-2">Swagger / OpenAPI</span>
-                                <span class="skill-badge me-2 mb-2">Serilog / NLog</span>
-                                <span class="skill-badge me-2 mb-2">SignalR</span>
-                                <span class="skill-badge me-2 mb-2">SonarQube</span>
-                            </div>
-                        </div>
-                         <div class="mb-4">
-                            <div class="subheading mb-3">Authentication & Methodologies</div>
-                            <div class="d-flex flex-wrap">
-                                <span class="skill-badge me-2 mb-2">IdentityServer4 / Azure AD</span>
-                                <span class="skill-badge me-2 mb-2">Agile Methodologies</span>
-                                <span class="skill-badge me-2 mb-2">Scrum</span>
-                                <span class="skill-badge me-2 mb-2">Kanban</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="mb-5"><span lang="en">Skills</span><span lang="pt" style="display:none;">Habilidades</span></h2>
+                    <div class="subheading mb-3"><span lang="en">Programming Languages & Tools</span><span lang="pt" style="display:none;">Linguagens de Programação & Ferramentas</span></div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item" title="NodeJS"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item" title=".NET Core"><i class="fas fa-code"></i></li>
+                        <li class="list-inline-item" title="Azure DevOps"><i class="fab fa-windows"></i></li>
+                        <li class="list-inline-item" title="AngularJS"><i class="fab fa-angular"></i></li>
+                        <li class="list-inline-item" title="ReactJS"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item" title="VueJS"><i class="fab fa-vuejs"></i></li>
+                        <li class="list-inline-item" title="PHP"><i class="fab fa-php"></i></li>
+                        <li class="list-inline-item" title="SQL Server"><i class="fas fa-database"></i></li>
+                        <li class="list-inline-item" title="MongoDB"><i class="fas fa-leaf"></i></li>
+                        <li class="list-inline-item" title="AWS"><i class="fab fa-aws"></i></li>
+                        <li class="list-inline-item" title="Docker"><i class="fab fa-docker"></i></li>
+                    </ul>
+                    <div class="subheading mb-3"><span lang="en">Languages</span><span lang="pt" style="display:none;">Idiomas</span></div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <span lang="en">Fluent English - Level C1</span><span lang="pt" style="display:none;">Inglês Fluente - Nível C1</span>
+                        </li>
+                         <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <span lang="en">Native Portuguese</span><span lang="pt" style="display:none;">Português Nativo</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <hr class="m-0" />
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                     <h2 class="mb-5 lang pt">Prêmios e Reconhecimentos</h2>
-                    <h2 class="mb-5 lang en" style="display:none;">Awards & Certifications</h2>
+                    <h2 class="mb-5"><span lang="en">Awards & Certifications</span><span lang="pt" style="display:none;">Prémios & Certificações</span></h2>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong class="lang pt">Prêmios Lusófonos de Criatividade</strong><br>
-                            <p class="lang pt">Em parceria com a The Group DigitalLive, desenvolvi uma ferramenta de apoio para confirmar a presença de colaboradores do Banco Santander no projeto que ficou conhecido como "O maior evento corporativo do Brasil".</p>
-                            <strong class="lang en" style="display:none;">Lusofonos Awards</strong><br>
-                            <p class="lang en" style="display:none;">In partnership with The Group DigitalLive, I developed a support tool to confirm the presence of employees of Banco Santander in the project that became known as "The biggest corporate event in Brazil".</p>
+                            <span lang="en">Lusophone Awards - In partnership with The Group DigitalLive, developed a support tool for the Santander bank event "The biggest corporate event in Brazil".</span>
+                            <span lang="pt" style="display:none;">Prémios Lusófonos - Em parceria com a The Group DigitalLive, desenvolveu uma ferramenta de apoio para o evento do banco Santander "O maior evento corporativo do Brasil".</span>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <strong class="lang pt">Best Marketing 2018</strong><br>
-                             <p class="lang pt">O case "O maior evento corporativo do país", realizado pela The Group DigitaLive!, foi o vencedor do prêmio Melhor Marketing 2018. Desenvolvemos a plataforma que permitiu a todos os convidados confirmarem presença.</p>
-                             <strong class="lang en" style="display:none;">Best Marketing 2018</strong><br>
-                             <p class="lang en" style="display:none;">The case "The biggest corporate event in the country" held by The Group DigitaLive! was the winner of the Best Marketing 2018 award. We developed the platform that allowed all guests to confirm their presence.</p>
+                             <span lang="en">Best Marketing 2018 - For the case "The biggest corporate event in the country" carried out by The Group DigitaLive!.</span>
+                             <span lang="pt" style="display:none;">Melhor Marketing 2018 - Pelo case "O maior evento corporativo do país" realizado pela The Group DigitaLive!.</span>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Scrum Master - Imasters - 2013
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            ITIL Foundation - Impacta Tecnologia - 2013
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="resume-section" id="courses">
-                 <div class="resume-section-content">
-                    <h2 class="mb-5 lang pt">Cursos e Certificações</h2>
-                    <h2 class="mb-5 lang en" style="display:none;">Courses & Certifications</h2>
-                     <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>Scrum Master - Imasters (2013)</li>
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>ITIL Foundation - Impacta Tecnologia (2013)</li>
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>ICS Project Manager - Impacta Tecnologia (2013)</li>
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>Digital Planning - Imasters (2013)</li>
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>Advanced NODEJS - Udemy (2015)</li>
-                        <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span>MongoDB - Udemy (2016)</li>
-                    </ul>
-                 </div>
-            </section>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://startbootstrap.github.io/startbootstrap-resume/js/scripts.js"></script>
         <script src="assets/js/scripts.js"></script>
     </body>
 </html>
