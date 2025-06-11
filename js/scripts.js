@@ -1,41 +1,21 @@
 /*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
+* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
-    // 1. Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-scrolled')
-        } else {
-            navbarCollapsible.classList.add('navbar-scrolled')
-        }
-    };
-    // Shrink the navbar 
-    navbarShrink();
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // 2. Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
+    // Activate Bootstrap scrollspy on the main nav element
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
+            target: '#sideNav',
             rootMargin: '0px 0px -40%',
         });
     };
 
-    // 3. Collapse responsive navbar when a toggler is visible
+    // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -48,64 +28,38 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // =========================================================================
-    // MELHORIAS DINÂMICAS ADICIONADAS
-    // =========================================================================
+});
 
-    // 4. Inicialização do AOS (Animate on Scroll)
-    AOS.init({
-        duration: 800, // Duração das animações em ms
-        once: true,    // A animação acontece apenas uma vez
+// Custom Language Switcher
+function switchLanguage(lang) {
+    // Hide all language elements
+    const allLangElements = document.querySelectorAll('.lang');
+    allLangElements.forEach(el => el.style.display = 'none');
+
+    // Show elements of the selected language
+    const selectedLangElements = document.querySelectorAll(`.lang.${lang}`);
+    selectedLangElements.forEach(el => el.style.display = 'block');
+
+    // Update active button state
+    const allButtons = document.querySelectorAll('.lang-btn');
+    allButtons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+
+    // Adjust navigation for block display
+     const selectedNavItems = document.querySelectorAll(`#navbarResponsive .lang.${lang}`);
+     selectedNavItems.forEach(item => {
+        // Find the parent <li> and set its display to 'block'
+        let parentLi = item.closest('.nav-item');
+        if(parentLi) {
+            parentLi.style.display = 'block';
+        }
     });
 
-    // 5. Efeito Máquina de Escrever (TypeIt)
-    new TypeIt("#job-title", {
-        strings: ["Fullstack Developer", "Tech Lead"],
-        speed: 100,
-        breakLines: false,
-        autoStart: true,
-        loop: true,
-    }).go();
+    // Update html lang attribute for accessibility
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+}
 
-    // 6. Lógica do Filtro de Habilidades
-    const filterContainer = document.querySelector("#skill-filters");
-    const skillColumns = document.querySelectorAll(".skill-column");
-
-    if (filterContainer) {
-        filterContainer.addEventListener("click", event => {
-            if (event.target.classList.contains("filter-btn")) {
-                // Remove a classe 'active' de todos os botões
-                filterContainer.querySelector(".active").classList.remove("active");
-                // Adiciona 'active' ao botão clicado
-                event.target.classList.add("active");
-
-                const filter = event.target.dataset.filter;
-                
-                skillColumns.forEach(column => {
-                    if (filter === 'all' || column.dataset.filter === filter) {
-                        column.classList.remove("hide");
-                    } else {
-                        // Adiciona um pequeno delay antes de esconder para a animação ser visível
-                        setTimeout(() => {
-                           column.classList.add("hide");
-                        }, 0);
-                    }
-                });
-            }
-        });
-    }
-
-    // 7. Lógica do Botão "Voltar ao Topo"
-    const backToTopButton = document.querySelector("#back-to-top-btn");
-
-    if (backToTopButton) {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) { // Mostra o botão após rolar 300px
-                backToTopButton.classList.add("show");
-            } else {
-                backToTopButton.classList.remove("show");
-            }
-        });
-    }
-
+// Initialize with PT as default
+document.addEventListener('DOMContentLoaded', () => {
+    switchLanguage('pt');
 });
